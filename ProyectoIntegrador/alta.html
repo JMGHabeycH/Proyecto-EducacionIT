@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugueteria Cosmica Alta</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <input type="checkbox" class="main-nav-toggle" id="main-nav-toggle">
+    <header class="main-header">
+        <div class="main-header__shop-items-container">
+            <div class="main-header__logo-container">
+                <a href="index.html" class="main-header__link"></a>
+            </div>
+            <div class="main-header__search-form-container">
+                    <form action="#" class="main-header__search-form">
+                        <input type="text" name="" class="main-header__search-input" placeholder="Buscar productos">
+                        <input type="submit" value="" class="main-header__submit-input">
+                    </form>
+            </div>
+            <div class="main-header__cart-button-container">
+                <div class="main-header__cart-button-wrapper">
+                    <a href="#" class="main-header__cart-link"></a>
+                </div>
+            </div>
+            <div class="main-header__hamburger-button-container">
+                <label for="main-nav-toggle" class="hamburger-button">
+                    <span class="hamburger-button__top-bread"></span>
+                    <span class="hamburger-button__meat"></span>
+                    <span class="hamburger-button__bottom-bread"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="main-header__main-nav-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a href="index.html" class="main-nav__link">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="alta.html" class="main-nav__link">Alta</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="contacto.html" class="main-nav__link">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="nosotros.html" class="main-nav__link">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="section-alta-form">
+            <header class="section-alta-form__header">
+                <h1 class="section-alta-form__header-tittle">¿Qué quieres vender?</h1>
+            </header>
+
+            <form action="" class="form">
+                <fieldset class="form__general-info">
+                    <legend class="form__general-info-legend">Información general:</legend>
+                    <div class="form__name-field">
+                        <label for="name">Nombre:*</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form__price-field">
+                        <label for="price">Precio:*</label>
+                        <input type="number" id="price">
+                    </div>
+                    <div class="form__stock-field">
+                        <label for="stock">Stock:*</label>
+                        <input type="number" id="stock">
+                    </div>
+                    <div class="form__brand-field">
+                        <label for="brand">Marca:*</label>
+                        <input type="text" id="brand">
+                    </div>
+                    <div class="form__category-field">
+                        <label for="category">Categoria:*</label>
+                        <input type="text" id="category">
+                    </div>
+                </fieldset>
+                <fieldset class="form__description-info">
+                    <legend class="form__description-info-legend">Descripciones:</legend>
+                    <div class="form__short-description-field">
+                        <label for="shortDescription">Descripcion corta:*</label>
+                        <input type="text" id="shortDescription">
+                    </div>
+                    <div class="form__long-description-field">
+                        <label for="longDescription">Descripcion larga:*</label>
+                        <textarea id="longDescription" cols="30" rows="10"></textarea>
+                    </div>
+                </fieldset>
+                <fieldset class="form__shipping-info">
+                    <div>Envío sin cargo:</div>
+                    <input type="radio" class="form__shipping-option" name="shipping" value="Sí"> Sí
+                    <input type="radio" class="form__shipping-option" name="shipping" value="No"> No
+                </fieldset>
+                <fieldset class="form__age-info">
+                    <legend class="form__age-info-lengend">Edades:</legend>
+                    <div class="form__min-age-field">
+                        <label for="minAge">Edad desde:*</label>
+                        <input type="number" id="minAge">
+                    </div>
+                    <div class="form__max-age-field">
+                        <label for="maxAge">Edad hasta:</label>
+                        <input type="number" id="maxAge">
+                    </div>
+                </fieldset>
+                <fieldset class="form__product-image">
+                    <input type="file" >
+                </fieldset>
+                <div class="form__button-container">
+                    <input type="submit" value="Publicar">
+                </div>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="main-footer__logo-container">
+            <img src="img/logotipos/logotipoAjustado.png" alt="" class="main-footer__logo">
+        </div>
+        <div class="main-footer__info">
+            <div class="main-footer__contact-info">
+                Contactenos al: 333 4445566
+            </div>
+            <div class="main-footer__copyright">
+                Copyright &copy; 2023 Jugueteria Cosmica COL
+            </div>
+        </div>
+        <div class="main-footer__social-medias">
+            <div class="main-footer__social-media-logo-container">
+                <img src="img/logotipos/facebookLogo.png" alt="" class="main-footer__social-media">
+            </div>
+            <div class="main-footer__social-media-logo">
+                <img src="img/logotipos/instagramLogo.png" alt="" class="main-footer__social-media">
+            </div>
+            <div class="main-footer__social-media-logo">
+                <img src="img/logotipos/youtubeLogo.png" alt="" class="main-footer__social-media">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
